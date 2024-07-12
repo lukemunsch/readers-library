@@ -2,26 +2,107 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    {% block meta %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- custom meta -->
+    <meta name="description" content="A Real Page Turner" />
+    {% endblock %}
+
+    <!-- extra meta -->
+    {% block extra_meta %} {% endblock %}
+
+    <!-- favicon -->
+
+    <!-- set up css -->
+    {% block core_css %}
+    <!-- css stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    {% endblock %} {% block extra_css %} {% endblock %}
+
+    <!-- set up javascript -->
+    {% block core_js %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/5889d2f18a.js"
+      crossorigin="anonymous"
+    ></script>
+    {% endblock %} {% block extra_js %} {% endblock %}
+
+    <!-- set up title for the site -->
+
     <title>A Real Page Turner</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- set up header for the site -->
     <header>
-        <h1>A Real Page Turner</h1>
-    </header>
+        <div class="container-fluid w-100 fixed-top">
+          <div class="row d-none d-lg-block">
+            <nav class="navbar navbar-expand-lg">
+              <div class="col-6">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                  <h1 class="header-title mx-5 pt-3">
+                    A Real Page Turner
+                  </h2>
+                </a>
+              </div>
+              <div class="col-6">
+                <ul id="topnav" class="list-inline row text-center">
+                  <li class="col-3 menuitem">
+                    <a class="nav-link plain-link" href="{% url 'home' %}"
+                      ><span>Home</span></a
+                    >
+                  </li>
+                  <li class="col-3 menuitem">
+                    <a class="nav-link plain-link disabled" href="#"
+                      ><span>Books</span></a
+                    >
+                  </li>
+                  <li class="col-3 menuitem">
+                    <a class="nav-link plain-link disabled" href="#"
+                      ><span>Login</span></a
+                    >
+                  </li>
+                  <li class="col-3 menuitem">
+                    <a class="nav-link plain-link disabled" href="#"
+                      ><span>About</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
 
     <!-- set up main content for the site -->
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+    <main>{% block content %} {% endblock %}</main>
 
     <!-- set up footer for the site -->
-    <footer>
-        <p>This is a non-profit site and no claim to any artwork or literature is made. All reviews are personal</p>
+    <footer class="fixed-bottom text-center">
+      <p>
+        This is a non-profit site and no claim to any artwork or literature is
+        made. All reviews are personal
+      </p>
     </footer>
-</body>
+  </body>
 </html>

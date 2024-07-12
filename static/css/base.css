@@ -1,8 +1,21 @@
+/* adding font styles */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+/* Main styles */
+
+body {
+    height: 100vh;
+}
 
 header {
     height: 100px;
     background-color: #724502;
-    color: rgb(255, 240, 220);
+    color: rgb(255, 210, 145);
+}
+
+.navbar-brand {
+    font-family: 'Anton SC', Arial, Helvetica, sans-serif;
+    color: rgb(255, 210, 145) !important;
 }
 
 footer {
@@ -10,3 +23,4 @@ footer {
     background-color: darkgrey;
     color: #000;
 }
+
