@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Real Page Turner</title>
+</head>
+<body>
+    <!-- set up header for the site -->
+    <header>
+        <h1>A Real Page Turner</h1>
+    </header>
+
+    <!-- set up main content for the site -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- set up footer for the site -->
+    <footer>
+        <p>This is a non-profit site and no claim to any artwork or literature is made. All reviews are personal</p>
+    </footer>
+</body>
+</html>

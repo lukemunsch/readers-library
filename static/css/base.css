@@ -1,0 +1,12 @@
+
+header {
+    height: 100px;
+    background-color: #724502;
+    color: rgb(255, 240, 220);
+}
+
+footer {
+    height: 30px;
+    background-color: darkgrey;
+    color: #000;
+}
