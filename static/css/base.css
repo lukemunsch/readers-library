@@ -4,7 +4,11 @@
 /* Main styles */
 
 body {
-    height: 100vh;
+    background: url('/static/img/bookshelves-bg.png') rgb(255, 210, 145) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Anton SC', Arial, Helvetica, sans-serif;
+    height: calc(100vh - 100px);
+    overflow-x: hidden;
 }
 
 header {
