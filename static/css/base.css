@@ -33,6 +33,10 @@ footer {
 
 /* Text styles */
 
+#topnav {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 .page-title {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
