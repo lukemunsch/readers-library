@@ -25,6 +25,22 @@ header {
     color: rgb(255, 210, 145) !important;
 }
 
+.tiles-section {
+    background-color: #000;
+    padding-left: 5%;
+    padding-right: 15%;
+}
+
+.content-tile {
+    height: 75px;
+    width: 23%;
+    margin-left: 5%;
+}
+
+#footer-push {
+    height: 30px;
+}
+
 footer {
     height: 30px;
     background-color: darkgrey;
@@ -44,3 +60,4 @@ footer {
 .page-subtitle {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+

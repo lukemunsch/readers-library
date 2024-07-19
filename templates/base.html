@@ -55,7 +55,7 @@
   <body>
     <!-- set up header for the site -->
     <header>
-        <div class="container-fluid w-100 fixed-top">
+        <div class="container-fluid w-100">
           <div class="row d-none d-lg-block">
             <nav class="navbar navbar-expand-lg">
               <div class="col-6">
@@ -98,6 +98,11 @@
     <main>{% block content %} {% endblock %}</main>
 
     <!-- set up footer for the site -->
+    <div id="footer-push" class="container">
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+    </div>
     <footer class="fixed-bottom text-center">
       <p>
         This is a non-profit site and no claim to any artwork or literature is
