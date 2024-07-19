@@ -1,7 +1,10 @@
 /* adding font styles */
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
-/* Main styles */
+
+/* base page styles */
 
 body {
     background: url('/static/img/bookshelves-bg.png') rgb(255, 210, 145) no-repeat center center fixed;
@@ -28,3 +31,12 @@ footer {
     color: #000;
 }
 
+/* Text styles */
+
+.page-title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.page-subtitle {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
