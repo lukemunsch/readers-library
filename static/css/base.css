@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    height: 100px;
+    height: auto;
     background-color: #724502;
     color: rgb(255, 210, 145);
 }
@@ -26,15 +26,54 @@ header {
 }
 
 .tiles-section {
-    background-color: #000;
+    border: 3px solid #724502;
     padding-left: 5%;
     padding-right: 15%;
+    text-align: center;
 }
 
 .content-tile {
-    height: 75px;
-    width: 23%;
-    margin-left: 5%;
+    padding: 15px;
+}
+
+.tiles-section a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.tiles-section a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.book-tile {
+    background-color: rgb(5, 50, 135);
+    color: #fff;
+}
+
+.book-tile:hover {
+    background-color: rgb(60, 125, 255);
+    color: #000;
+}
+
+.account-tile {
+    background-color: rgb(55, 5, 150);
+    color: #fff;
+}
+
+.account-tile:hover {
+    background-color: rgb(145, 95, 255);
+    color: #000;
+}
+
+.about-tile {
+    background-color: rgb(45, 85, 5);
+    color: #fff;
+}
+
+.about-tile:hover {
+    background-color: rgb(100, 145, 55);
+    color: #000;
 }
 
 #footer-push {
